@@ -1,0 +1,55 @@
+.body {
+    font-family: 'Nunito', Courier, monospace;
+    width: 100%;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 1rem;
+
+    
+
+}
+.header__section--logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: .5rem;
+    i {
+        display: flex;
+        width: 3rem;
+        cursor: pointer;
+        justify-content: center;
+        span {
+            position: relative;
+            top: 0;
+            background: red;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 2px;
+        }
+    }
+    a{
+        display: flex;
+        width: 10rem;
+        cursor: pointer;
+        justify-content: space-around;
+        img {
+            width: 10rem;
+        }
+    }
+
+}
+.header__img--cartIcon {
+    color: black;
+    padding: 5px 0 10px 0;
+    display: flex;
+    align-self: flex-end;
+}

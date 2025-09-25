@@ -1,0 +1,27 @@
+.main__section--menu {
+    width: 12rem;
+    background-color: $backgroundhover;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    position: fixed;
+    left: -250%;
+    top: 24%;
+    box-shadow: $boxshadow;
+    border-radius: 1rem;
+    transition: all .25s ease;
+    &.show {
+        left: 0;
+    }
+    a {
+        text-decoration: none;
+        display: flex;
+        height: 3rem;
+        font-size: large;
+    }
+    }
+.closeIconMenu { 
+    width: 20%;
+    opacity: .7;
+    align-self: flex-end;
+    cursor: pointer;
+}

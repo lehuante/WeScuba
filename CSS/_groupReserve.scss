@@ -1,0 +1,33 @@
+.main__section--groupReserve {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: min-content;
+    background-color: $backgroundhover;
+    color: $maindarkcolor;
+    padding: 1rem;
+    box-sizing: border-box;
+   // height: 70%;
+    position: fixed;
+    bottom: -200%;
+    right: 0;
+    box-shadow: $boxshadow;
+    border-radius: 1rem;
+    transition: all .25s ease;
+
+    &.show {
+        bottom: 0;
+    }
+    .closeIcon {
+        width: 10%;
+        opacity: .7;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+    .main__form--input {
+        color: $maindarkcolor;
+        border-color: $maindarkcolor;
+        background-color: $maintransparentColor;
+    }
+}

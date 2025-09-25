@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> &#8776; We  &#9829; SCUBA &#8776; </title>        
+<!-- Esta es la font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit&family=Tilt+Neon&display=swap" rel="stylesheet">
+<!-- Aca falta incluir el link para CSS -->
+<link rel="stylesheet" href="CSS/styles.css">
+<script src="JS/functions.js" defer></script>
+</head>
+<body class="body">
+    <header class="header">
+        <section class="header__section--logos">
+            <i><img src="IMG/menu.svg" alt="menu" class="header__img--icon header__img--menu"></i>
+            <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
+            <i><img src="IMG/cart.svg" alt="Cart" class="header__img--icon header__img--cartIcon">
+                <span id="header__i--count cartCont"  class="header__i--span badge circle">0</span></i>
+            
+
+        </section> 
+
+    </header>
+    <main>
+        <aside class="main__banner">
+            <p>
+                Friends & SCUBA <small><sub>and a baby pineapple</sub></small>
+            </p>
+        </aside>
+        <section class="main__section--gallery" id="main__section--galleryCont" >
+            <div class="main__article--slot main__article--pic ">
+                <img src="Gallery/Gallery1.jpeg" alt="1" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery3.jpeg" alt="2"  class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery8.jpeg" alt="3" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/gallery12.jpeg" alt="4" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery4.jpeg" alt="5" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                 <img src="Gallery/Gallery5.jpeg" alt="6" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery7.jpeg" alt="7" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery9.jpeg" alt="8" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery2.jpeg" alt="9" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery10.jpeg" alt="10" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery11.jpeg" alt="11" class="main__article--imgGallery"></div>
+            <div class="main__article--slot main__article--pic">
+                <img src="Gallery/Gallery6.jpeg" alt="12" class="main__article--imgGallery"></div>
+
+        </section>
+        <section class="main__section--menu">
+            <img src="IMG/close.svg"  class="main__section--imgclose closeIconMenu">
+            <dl>
+                <dt><a href="index.html" class="">Home</a></dt>
+                <dt><a href="courses.html" class="">Courses</a></dt>
+                <dt><a href="Gallery.html" class="">Gallery</a></dt>
+                <dt><a href="fundives.html" class="">Fun Dives</a></dt>
+            </dl>
+            
+        </section>
+        <section class="main__section--cartmain ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <button class="chekcoutButton">Checkout</button>
+
+            <h2>Cart</h2>
+            <section class="main__section--cart">
+                <div class="cartProd">
+                        <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd"> 
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd">
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+            </section>
+        </section>
+        <section class="main__section--groupReserve ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input class="main__form--input" type="text" id="fName" >
+                <br>    
+                <label for="lname">Last Name</label>
+                <input class="main__form--input" type="text" id="lName" >
+                <br>
+                <label for="nDivers">Number of Divers</label>
+                <input class="main__form--input" type="text" id="nDivers" >
+                <br>
+                <label for="date">Date </label>
+                <input class="main__form--input" type="date" id="date" >
+                <br>
+                <label for="mobile">Mobile </label>
+                <input class="main__form--input" type="tel" id="mobile" >
+                <br>
+                <label for="email">e-mail</label>
+                <input class="main__form--input" type="email" id="email" >
+                <br>
+                <input class="main__form--input" id="main__form--submitBtn" type="submit">
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <section >  
+             
+             <br>
+                <article class="footer__article--logos  "> 
+                         <a href="index.html"    ><img src="IMG/Logo.png" alt="Logo"></a>
+                         <a href="index.html"    ><img src="IMG/PADI.jpeg" alt="PADI" width=""  id="padipic"></a> 
+                </article>
+                 <article    class="footer__article--ads">
+                     <div>
+                         <h5 ><i>Addittional Links</i></h5>
+                         <small><a href="https://dan.org/"> <b>DAN</b> <i>Diver's Alert Network</i> </a></small>
+                         <br>
+                         <small><a href="https://www.padi.com/?lang=en"><b>PADI</b> <i>Professional Association of Diving Instructors</i> </a></small>
+                         <br>
+                     </div>
+                     <DIV id="groupReserveIcon" >
+                        <img src="IMG/people.svg" alt="groupReserve">
+                        <p>Group Reserve? Click Here</p>
+                        <!--<a href="fundives.html"    class="footer__article--whatsapp gridfoot4">Book through Whatsapp</a> -->
+                    </DIV>
+         </section>
+     </footer>
+ 
+
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> &#8776; We  &#9829; SCUBA &#8776; </title>        
+<!-- Esta es la font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit&family=Tilt+Neon&display=swap" rel="stylesheet">
+<!-- Aca falta incluir el link para CSS -->
+<link rel="stylesheet" href="CSS/styles.css">
+<script src="JS/functions.js" defer></script>
+</head>
+<body class="body">
+    <header class="header">
+        <section class="header__section--logos">
+            <i><img src="IMG/menu.svg" alt="menu" class="header__img--menu"></i>
+            <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
+            <i><img src="IMG/cart.svg" alt="Cart" class="header__img--cartIcon">
+                <span id="cartCont"  class="badge circle">2</span></i>
+            
+
+        </section> 
+    </header>
+    <main>
+        <aside class="main__banner main__banner--top">
+            <a href="courses.html" id="dsdbanner"><p>Discover Scuba Diving</p></a>
+        </aside>
+        <section class="main__section--video" >
+            <video src="VID/DSD-vid.mp4" controls autoplay replay ></video>
+            <nav  class="main__section--nav" >
+                <a href="courses.html" class="main__nav--a">Courses</a>
+                <a href="Gallery.html" class="main__nav--a">Gallery</a>
+                <a href="fundives.html" class="main__nav--a">Fun Dives</a>
+            </nav>
+        </section>
+        <h4 class="main__banner--h4"><q> Not all treasure is silver and gold.</q></h4>
+        <section class="main__section--menu main__menu--mainpic">
+            <img src="IMG/close.svg"  class="main__section--img closeIconMenu">
+            <dl>
+                <dt><a href="index.html" class="">Home</a></dt>
+                <dt><a href="courses.html" class="">Courses</a></dt>
+                <dt><a href="Gallery.html" class="">Gallery</a></dt>
+                <dt><a href="fundives.html" class="">Fun Dives</a></dt>
+            </dl>
+            
+        </section>
+        <section class="main__section--cartmain ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <button class="chekcoutButton">Checkout</button>
+
+            <h2>Cart</h2>
+            <section class="main__section--cart ">
+                <div class="cartProd">
+                        <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd"> 
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+                <div class="cartProd">
+                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <p>Fundive</p>
+                    <p>$2,200<sub><small>MXN</small></sub></p>
+                    
+                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                </div>
+            </section>
+        </section>
+        <section class="main__section--groupReserve ">
+            <img src="IMG/close.svg"  class="closeIcon">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input class="main__form--input" type="text" id="fName" >
+                <br>    
+                <label for="lname">Last Name</label>
+                <input class="main__form--input" type="text" id="lName" >
+                <br>
+                <label for="nDivers">Number of Divers</label>
+                <input class="main__form--input" type="text" id="nDivers" >
+                <br>
+                <label for="date">Date </label>
+                <input class="main__form--input" type="date" id="date" >
+                <br>
+                <label for="mobile">Mobile </label>
+                <input class="main__form--input" type="tel" id="mobile" >
+                <br>
+                <label for="email">e-mail</label>
+                <input class="main__form--input" type="email" id="email" >
+                <br>
+                <input class="main__form--input" id="main__form--submitBtn" type="submit">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+       <section >  
+            
+            <br>
+               <article class="footer__article--logos  "> 
+                        <a href="index.html"    ><img src="IMG/Logo.png" alt="Logo"></a>
+                        <a href="index.html"    ><img src="IMG/PADI.jpeg" alt="PADI" width=""  id="padipic"></a> 
+               </article>
+                <article    class="footer__article--ads">
+                    <div>
+                        <h5 ><i>Addittional Links</i></h5>
+                        <small><a href="https://dan.org/"> <b>DAN</b> <i>Diver's Alert Network</i> </a></small>
+                        <br>
+                        <small><a href="https://www.padi.com/?lang=en"><b>PADI</b> <i>Professional Association of Diving Instructors</i> </a></small>
+                        <br>
+                    </div>
+                    <DIV id="groupReserveIcon" >
+                        <img src="IMG/people.svg" alt="groupReserve">
+                        <p>Group Reserve? Click Here</p>
+                        <!--<a href="fundives.html"    class="footer__article--whatsapp gridfoot4">Book through Whatsapp</a> -->
+                    </DIV>
+        </section>
+    </footer>
+
+
+</body>
+</html>

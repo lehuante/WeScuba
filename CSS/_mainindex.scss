@@ -28,15 +28,12 @@
 .main__section--video {
     display: flex;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     box-sizing: border-box;  
     gap: clamp(1rem, 4vw, 5rem);
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
     margin-top: .5rem;
-    padding: 0 1rem;
     
     video {
         flex: 1;

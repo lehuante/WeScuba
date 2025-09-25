@@ -1,4 +1,19 @@
 /*Etiquetas*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
 /*mixin*/
 /* media queries */
 @media screen and (max-width: 41rem) {
@@ -55,27 +70,38 @@
 /*---Estilos---*/
 .body {
   font-family: "Nunito", Courier, monospace;
+  max-width: 1200px;
   width: 100%;
   font-weight: 300;
-  margin: 0;
-  padding: 0 1rem;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 2rem);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .header__section--logos {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 0.5rem;
+  padding: 0 1rem;
 }
 .header__section--logos i {
   display: flex;
   width: 3rem;
   cursor: pointer;
   justify-content: center;
+  flex-shrink: 0;
+}
+.header__section--logos i:first-child {
+  justify-content: flex-start;
+}
+.header__section--logos i:last-child {
+  justify-content: flex-end;
 }
 .header__section--logos i span {
   position: relative;
@@ -94,10 +120,13 @@
   display: flex;
   width: 10rem;
   cursor: pointer;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 .header__section--logos a img {
   width: 10rem;
+  max-width: 100%;
 }
 
 .header__img--cartIcon {
@@ -134,15 +163,12 @@
 .main__section--video {
   display: flex;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   box-sizing: border-box;
   gap: clamp(1rem, 4vw, 5rem);
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
   margin-top: 0.5rem;
-  padding: 0 1rem;
 }
 .main__section--video video {
   flex: 1;

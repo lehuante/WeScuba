@@ -6,3 +6,19 @@ $backgroundhover: rgb(245, 245, 245);
 $boxshadow: -.5rem -.5rem .7rem -.7rem rgba(0, 0, 0, .30);
 $maindarkcolor: rgb(65, 120, 166, 65%);
 $maintransparentColor: rgb(0 195 237 / 22%);
+
+// Estilos globales para eliminar scroll horizontal
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}

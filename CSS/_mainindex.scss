@@ -9,32 +9,58 @@
     box-sizing: border-box;
     margin-top: .3rem;
     border-radius: .5em;
-    p {
-        font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);        text-decoration: none;
+    
+    a {
+        text-decoration: none;
         color: rgb(214, 245, 255);
-         
+        
+        &:hover {
+            color: $hovercolor;
+        }
     }
-    &:hover {
-        color: $hovercolor;
-
+    
+    h1, p {
+        font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);        
+        color: inherit;
     }
 }
 
 .main__section--video {
     display: flex;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     box-sizing: border-box;  
-    gap: 5rem;
+    gap: clamp(1rem, 4vw, 5rem);
     justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    box-sizing: border-box;
+    align-items: stretch;
+    flex-wrap: wrap;
     margin-top: .5rem;
+    padding: 0 1rem;
+    
     video {
-        width: 40%;  
+        flex: 1;
+        min-width: 300px;
+        max-width: 500px;
+        height: 350px;
+        min-height: 350px;
         @include borderstyle();
         border-style: none;
         box-sizing: border-box;
+        object-fit: cover;
+    }
+    
+    // Media queries para responsividad
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+        
+        video {
+            width: 100%;
+            max-width: none;
+            height: 250px;
+            min-height: 250px;
+        }
     }
 }  
 
@@ -54,26 +80,43 @@
     @include borderstyle();
     text-align: center;
 }
+
 .main__section--nav {
     display: flex;
     flex-direction: column;
-    width: 45% ;
-    flex-wrap: nowrap;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 350px;
     align-items: center;
     font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
-    height: 23rem;
     justify-content: space-evenly;
-    @include borderstyle ; 
+    @include borderstyle;
     background-image: url(imgstil/discovering.jpg);   
     background-size: cover; 
     background-blend-mode: normal;
     background-position-y: 27%; 
     opacity: .8;
+    box-sizing: border-box;
+    
     .main__nav--a {
         color: $maingrey;
         text-decoration: none; 
         font-weight: 800; 
         padding: .7rem;
+        transition: all 0.3s ease;
+        border-radius: 8px;
         
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
     }
+    
+    // Media queries para responsividad
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: none;
+        min-height: 250px;
     }
+}

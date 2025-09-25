@@ -16,19 +16,16 @@
     <header class="header">
         <section class="header__section--logos">
             <i><img src="IMG/menu.svg" alt="menu" class="header__img--menu"></i>
-            <a href="index.html"><img src="IMG/Logo.png" alt="Logo" class="header__logo"></a>
-            <i><img src="IMG/cart.svg" alt="Cart" class="header__img--cartIcon">
-                <span id="cartCont"  class="badge circle">2</span></i>
-            
-
+            <a href="index.html"><img src="IMG/Logo.png" alt="Página de inicio" class="header__logo"></a>
+            <i><img src="IMG/cart.svg" alt="Carrito de compra" class="header__img--cartIcon"><span id="cartCont"  class="badge circle">2</span></i>
         </section> 
     </header>
     <main>
-        <aside class="main__banner main__banner--top">
-            <a href="courses.html" id="dsdbanner"><p>Discover Scuba Diving</p></a>
-        </aside>
-        <section class="main__section--video" >
-            <video src="VID/DSD-vid.mp4" controls autoplay replay ></video>
+        <section class="main__banner main__banner--top">
+            <a href="courses.html" id="dsdbanner" alt="Banner Discover Scuba Diving"><p>Discover Scuba Diving</p></a>
+        </section>
+        <section class="main__section--video" alt="Video y navegación del sitio">
+            <video src="VID/DSD-vid.mp4" controls autoplay replay alt="Video Discover Scuba Diving" ></video>
             <nav  class="main__section--nav" >
                 <a href="courses.html" class="main__nav--a">Courses</a>
                 <a href="Gallery.html" class="main__nav--a">Gallery</a>
@@ -36,8 +33,8 @@
             </nav>
         </section>
         <h4 class="main__banner--h4"><q> Not all treasure is silver and gold.</q></h4>
-        <section class="main__section--menu main__menu--mainpic">
-            <img src="IMG/close.svg"  class="main__section--img closeIconMenu">
+        <section role="menu" class="main__section--menu main__menu--mainpic">
+            <img src="IMG/close.svg" alt="Cerrar menú" class="main__section--img closeIconMenu">
             <dl>
                 <dt><a href="index.html" class="">Home</a></dt>
                 <dt><a href="courses.html" class="">Courses</a></dt>
@@ -47,56 +44,68 @@
             
         </section>
         <section class="main__section--cartmain ">
-            <img src="IMG/close.svg"  class="closeIcon">
-            <button class="chekcoutButton">Checkout</button>
+            <img src="IMG/close.svg"  alt="Cerrar Carrito" class="closeIcon">
+            <button role="button" aria-label="Checkout button" class="chekcoutButton">Checkout</button>
 
             <h2>Cart</h2>
             <section class="main__section--cart ">
                 <div class="cartProd">
-                        <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                        <img src="IMG/OW.png" alt="Imagen de un buceador" class="main__cart--mainpic">
                     <p>Fundive</p>
                     <p>$2,200<sub><small>MXN</small></sub></p>
                     
-                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                    <img src="IMG/delete.svg" alt="eliminar" class="remove main__cart--removeicon">
                 </div>
                 <div class="cartProd"> 
-                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <img src="IMG/OW.png" alt="Libro Open Water" class="main__cart--mainpic">
                     <p>Fundive</p>
                     <p>$2,200<sub><small>MXN</small></sub></p>
                     
-                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                    <img src="IMG/delete.svg" alt="eliminar" class="remove main__cart--removeicon">
                 </div>
                 <div class="cartProd">
-                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <img src="IMG/OW.png" alt="Libro Open Water" class="main__cart--mainpic">
                     <p>Fundive</p>
                     <p>$2,200<sub><small>MXN</small></sub></p>
-                    
-                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+
+                    <img src="IMG/delete.svg" alt="eliminar" class="remove main__cart--removeicon">
                 </div>
             </section>
         </section>
         <section class="main__section--groupReserve ">
-            <img src="IMG/close.svg"  class="closeIcon">
-            <form action="">
-                <label for="fname">First Name</label>
-                <input class="main__form--input" type="text" id="fName" >
+            <img src="IMG/close.svg" alt="Cerrar Reserva de grupo" class="closeIcon">
+            <form role="form" action="">
+                <section>
+                    <label for="fname">First Name</label>
+                    <input class="main__form--input" type="text" aria-label="Enter First Name" name="fName" id="fName" >
+                </section>
                 <br>    
-                <label for="lname">Last Name</label>
-                <input class="main__form--input" type="text" id="lName" >
+                <section>
+                    <label for="lname">Last Name</label>
+                    <input class="main__form--input" type="text" aria-label="Enter Last Name" id="lName" >
+                </section>
                 <br>
-                <label for="nDivers">Number of Divers</label>
-                <input class="main__form--input" type="text" id="nDivers" >
+                <section>
+                    <label for="nDivers">Number of Divers</label>
+                    <input class="main__form--input" type="text" aria-label="Enter Number of Divers" name="nDivers" id="nDivers" >
+                </section>
                 <br>
-                <label for="date">Date </label>
-                <input class="main__form--input" type="date" id="date" >
+                <section>
+                    <label for="date">Date </label>
+                    <input class="main__form--input" type="date" name="date" aria-label="Enter Date" id="date" >
+                </section>
                 <br>
-                <label for="mobile">Mobile </label>
-                <input class="main__form--input" type="tel" id="mobile" >
+                <section>
+                    <label for="mobile">Mobile </label>
+                    <input class="main__form--input" type="tel" aria-label="Mobile Number" id="mobile" >
+                </section>
                 <br>
-                <label for="email">e-mail</label>
-                <input class="main__form--input" type="email" id="email" >
+                <section>
+                    <label for="email">e-mail</label>
+                    <input class="main__form--input" type="email" name="email" aria-label="Enter Email" id="email" >
+                </section>
                 <br>
-                <input class="main__form--input" id="main__form--submitBtn" type="submit">
+                    <input class="main__form--input" id="main__form--submitBtn" aria-label="Submit your information button" role="button" type="submit">
             </form>
         </section>
     </main>

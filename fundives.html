@@ -31,9 +31,9 @@
         </aside>
         </section>
 
-        <section class="main__section--gallery">
+        <section class="main__section--gallery" role="grid" >
             <div class="main__article--slot  ">
-                <img src="IMG/diverrising.jpg" alt="" class="imagenes">
+                <img src="IMG/diverrising.jpg" aria-label="Diver Rising from the water" alt="Diver Rising" class="imagenes">
                 <h2 class="concepto">2 Tank Dive Trip</h2>
                 <p>National Marine Park fees included</p>
                 <p>Healthy snack on board and water</p>
@@ -45,7 +45,7 @@
             </div>
 
             <article class="main__article--slot ">
-                <img src="IMG/twilight.jpg" alt="" class="imagenes">
+                <img src="IMG/twilight.jpg" aria-label="boat at sunset next to a pier" alt="Twilight - 2 Tank Dive Trip" class="imagenes">
                 <h2 class="concepto">Twilight - 2 Tank Dive Trip</h2>
                 <p>National Marine Park fees included</p>
                 <p>Healthy snacks on board and water</p>
@@ -57,7 +57,7 @@
             </article>
 
             <article class="main__article--slot ">
-                <img src="IMG/reefdiver.jpeg" alt="" class="imagenes">
+                <img src="IMG/reefdiver.jpeg" aria-label="reef and a diver" alt="Reef Diver" class="imagenes">
                 <h2 class="concepto">Night 1 Tank Dive Trip</h2>
                 <p>National Marine Park fees included</p>
                 <p>1 tank </p>
@@ -68,7 +68,7 @@
 
             </article>
             <article class="main__article--slot ">
-                <img src="IMG/smilingdiver.jpeg" alt="" class="imagenes">
+                <img src="IMG/smilingdiver.jpeg" aria-label="smiling diver" alt="Smiling Diver" class="imagenes">
                 <h2 class="concepto">Private Dive Master</h2>
                 <p>The perfect choice if you want to </p>
                 <p>experience Cozumel reefs at your</p>
@@ -79,7 +79,7 @@
 
             </article>
             <article class="main__article--slot ">
-                <img src="IMG/ladydiver.jpeg" alt="" class="imagenes">
+                <img src="IMG/ladydiver.jpeg" aria-label="Lady diver with friends" alt="Lady Diver with Friends" class="imagenes">
                 <h2 class="concepto">Private Charter</h2>
                 <p>Up to 5 guests diving 2 tanks</p>
                 <p>Snacks and water onboard</p>
@@ -90,9 +90,8 @@
 
             </article>
             
-        </section>
-        <section class="main__section--menu">
-            <img src="IMG/close.svg"  class="closeIconMenu">
+        <section role="menu" class="main__section--menu main__menu--mainpic">
+            <img src="IMG/close.svg" alt="Cerrar menú" class="main__section--img closeIconMenu">
             <dl>
                 <dt><a href="index.html" class="">Home</a></dt>
                 <dt><a href="courses.html" class="">Courses</a></dt>
@@ -102,58 +101,68 @@
             
         </section>
         <section class="main__section--cartmain ">
-            <img src="IMG/close.svg"  class="closeIcon">
-            <button class="chekcoutButton">Checkout</button>
+            <img src="IMG/close.svg"  alt="Cerrar Carrito" class="closeIcon">
+            <button role="button" aria-label="Checkout button" class="chekcoutButton">Checkout</button>
+
             <h2>Cart</h2>
             <section class="main__section--cart ">
                 <div class="cartProd">
-                        <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                        <img src="IMG/OW.png" alt="Imagen de un buceador" class="main__cart--mainpic">
                     <p>Fundive</p>
                     <p>$2,200<sub><small>MXN</small></sub></p>
                     
-                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                    <img src="IMG/delete.svg" alt="eliminar" class="remove main__cart--removeicon">
                 </div>
                 <div class="cartProd"> 
-                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                    <img src="IMG/OW.png" alt="Libro Open Water" class="main__cart--mainpic">
                     <p>Fundive</p>
                     <p>$2,200<sub><small>MXN</small></sub></p>
                     
-                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+                    <img src="IMG/delete.svg" alt="eliminar" class="remove main__cart--removeicon">
                 </div>
-                <div class="last_cartProd cartProd">
-                    <img src="IMG/OW.png" alt="" class="main__cart--mainpic">
+                <div class="cartProd">
+                    <img src="IMG/OW.png" alt="Libro Open Water" class="main__cart--mainpic">
                     <p>Fundive</p>
                     <p>$2,200<sub><small>MXN</small></sub></p>
-                    
-                    <img src="IMG/delete.svg" alt="iconoquitar" class="remove main__cart--removeicon">
+
+                    <img src="IMG/delete.svg" alt="eliminar" class="remove main__cart--removeicon">
                 </div>
             </section>
-            <hr>
-            
-
         </section>
         <section class="main__section--groupReserve ">
-            <img src="IMG/close.svg"  class="closeIcon">
-            <form action="">
-                <label for="fname">First Name</label>
-                <input class="main__form--input" type="text" id="fName" >
+            <img src="IMG/close.svg" alt="Cerrar Reserva de grupo" class="closeIcon">
+            <form role="form" action="">
+                <section>
+                    <label for="fname">First Name</label>
+                    <input class="main__form--input" type="text" aria-label="Enter First Name" name="fName" id="fName" >
+                </section>
                 <br>    
-                <label for="lname">Last Name</label>
-                <input class="main__form--input" type="text" id="lName" >
+                <section>
+                    <label for="lname">Last Name</label>
+                    <input class="main__form--input" type="text" aria-label="Enter Last Name" id="lName" >
+                </section>
                 <br>
-                <label for="nDivers">Number of Divers</label>
-                <input class="main__form--input" type="text" id="nDivers" >
+                <section>
+                    <label for="nDivers">Number of Divers</label>
+                    <input class="main__form--input" type="text" aria-label="Enter Number of Divers" name="nDivers" id="nDivers" >
+                </section>
                 <br>
-                <label for="date">Date </label>
-                <input class="main__form--input" type="date" id="date" >
+                <section>
+                    <label for="date">Date </label>
+                    <input class="main__form--input" type="date" name="date" aria-label="Enter Date" id="date" >
+                </section>
                 <br>
-                <label for="mobile">Mobile </label>
-                <input class="main__form--input" type="tel" id="mobile" >
+                <section>
+                    <label for="mobile">Mobile </label>
+                    <input class="main__form--input" type="tel" aria-label="Mobile Number" id="mobile" >
+                </section>
                 <br>
-                <label for="email">e-mail</label>
-                <input class="main__form--input" type="email" id="email" >
+                <section>
+                    <label for="email">e-mail</label>
+                    <input class="main__form--input" type="email" name="email" aria-label="Enter Email" id="email" >
+                </section>
                 <br>
-                <input class="main__form--input" id="main__form--submitBtn" type="submit">
+                    <input class="main__form--input" id="main__form--submitBtn" aria-label="Submit your information button" role="button" type="submit">
             </form>
         </section>
     </main>

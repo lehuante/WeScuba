@@ -86,7 +86,7 @@
     max-width: 500px;
     min-height: 350px;
     align-items: center;
-    font-size: clamp(0.8rem, -0.057rem + 2.286vw, 2rem);
+    font-size: clamp(1.1rem, 1rem + 0.2vw, 1.3rem);
     justify-content: space-evenly;
     @include borderstyle;
     background-image: url(imgstil/discovering.jpg);   
